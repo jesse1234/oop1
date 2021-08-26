@@ -1,27 +1,27 @@
 package com.company;
-import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-	Scanner input = new Scanner(System.in);
-	int KCSEgrade;
-	int confidence;
-	int interview;
+        // Get all years divisible by 4 and 20
+        YearRange myFirstRange = new YearRange(1314, 2014);
+        myFirstRange.setRangeType(1);
 
-	System.out.println("Please enter KCSE grades: ");
-	KCSEgrade = input.nextInt();
+        // Get all leap years
+        YearRange mySecondRange = new YearRange(1100, 3150);
+        mySecondRange.setRangeType(2);
 
-    System.out.println("Please enter confidence score: ");
-    confidence = input.nextInt();
+        // Get all Olympic years divisible by 3
+        YearRange myThirdRange = new YearRange(1500, 3150);
+        myThirdRange.setRangeType(3);
 
-    System.out.println("Please enter interview score: ");
-    interview = input.nextInt();
+        System.out.println("List all years divisible by " + myFirstRange.getFirstDivisor() + " and " + myFirstRange.getSecondDivisor());
+        myFirstRange.printYears();
 
-        if (KCSEgrade >= 65 && confidence >= 6 || interview >= 5)
-            System.out.println("Admitted");
-        else if(KCSEgrade < 65 && confidence < 6 || interview < 5)
-            System.out.println("Denied");
+        System.out.println("List all of the leap years between " + mySecondRange.getFirstYear() + " and " + mySecondRange.getSecondYear());
+        mySecondRange.printYears();
 
+        System.out.println("List of all Olympic years between " + myThirdRange.getFirstYear() + " and " + myThirdRange.getSecondYear() + " that are divisible by " + myThirdRange.getFirstDivisor());
+        myThirdRange.printYears();
     }
 }
