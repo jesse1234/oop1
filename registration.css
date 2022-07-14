@@ -1,0 +1,92 @@
+body{
+	background-color:#ff523b;
+	font-family: 'Anek Latin', sans-serif;
+}
+
+h1{
+	color:#fff;
+}
+
+label{
+	font-size:20px;
+}
+
+input {
+	padding:10px;
+	font-size:inherit;
+}
+
+form{
+	margin:20px auto;
+	width:320px;
+	color:black;
+}
+
+input[type = "text"]{
+	display:block;
+	margin-bottom:20px;
+	width: 80%;
+	border:2px solid white;
+}
+
+input[type = "email"]{
+	display:block;
+	margin-bottom:20px;
+	width: 80%;
+	border:2px solid white;
+}
+
+input[type = "radio"]{
+	margin: 0 8px 25px 15px;
+}
+
+input[type = "radio"]:first-child{
+	margin-left: 0;
+}
+
+input[type = "number"]{
+	display:block;
+	margin-bottom:20px;
+	width: 15%;
+	border:2px solid white;
+}
+
+input[type = "password"]{
+	display:block;
+	margin-bottom:20px;
+	width: 80%;
+	border:2px solid white;
+}
+
+textarea[name = "message"]{
+	display:block;
+	margin-bottom:20px;
+	border:2px solid white;
+}
+
+button[type = "submit"]{
+	width: 290px;
+	height:40px;
+	background:#fff;
+	border:2px;
+	margin-bottom:20px;
+	
+}
+
+button[type = "submit"]:hover{	
+	background:white;
+	border:none;
+	font-weight:bold;
+}
+
+button[type = "reset"]{
+	width: 290px;
+	height:40px;
+	background:white;
+}
+
+button[type = "reset"]:hover{
+	background:#ff523b;
+	font-weight:bold;
+}
+
